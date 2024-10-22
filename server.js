@@ -89,7 +89,7 @@ app.post("/getWeatherData",async function(request,response){
                 windSpeed: data.timelines.minutely[0].values.windSpeed,
                 weather : weatherCodes[tomorrowIcon], // Getting corresponding weather detail for weatherCode
                 statusCode : data.statusCode,
-                imageUrl : `./public/assets/${tomorrowIcon}.png `
+                imageUrl : `/public/assets/${tomorrowIcon}.png `
               };
               break;
       
@@ -101,7 +101,7 @@ app.post("/getWeatherData",async function(request,response){
                 weather: data.currently.summary,
                 windSpeed: data.currently.windSpeed,
                 statusCode : data.statusCode,
-                imageUrl : `./public/assets/${pirateWeatherIcon}.png `
+                imageUrl : `public/assets/${pirateWeatherIcon}.png `
               };
               break;
       
